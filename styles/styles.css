@@ -1,0 +1,348 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+  }
+  
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #242424;
+    background-color: #FFFFFF;
+}  
+
+.main-header {
+    font-family: "PT Sans", sans-serif;
+    color: #242424;
+    background-color: #FFFFFF;
+}
+
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-style: bold;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #242424;
+    background-color: #FFFFFF;
+    text-decoration: none;    
+}
+
+.navigation-link-button {
+    font-family: "PT Sans", sans-serif;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #756257;
+    text-decoration: none;
+    text-transform: uppercase;  
+}
+
+.main-index {
+    color: #242424;
+    background-color: #FFFFFF;
+    background-image: url("images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+}
+
+.advantages {
+    text-align: center;
+
+}
+
+.advantages-title {
+    font-family: "PT Sans", sans-serif;;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+
+}
+
+.advantages-subtitle {
+    font-family: "PT Sans", sans-serif;;
+    font-size: 22px;
+    line-height: 36px;
+
+}
+
+.advantages-description-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+
+}
+
+.advantages-description-number {
+    font-family: "PT Sans", sans-serif;;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.advantages-description {
+    font-family: "PT Sans", sans-serif;;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.search {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+
+}
+
+.search-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+
+}
+
+.search-subtitle {
+    font-size:22px;
+    line-height: 26px;
+}
+
+.search-button {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #756257;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.newsletter {
+    font-family: "PT Sans", sans-serif;
+    color:#242424;
+    text-align: center;
+}
+
+.newsletter-title {    
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.newsletter-subtitle {
+    font-size:22px;
+    line-height: 26px;
+}
+
+.newsletter-button {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #83B3D3; 
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.newsletter-email {
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #F2F2F2;
+
+}
+
+.page-footer {
+    font-family: "PT Sans", sans-serif;
+    color: #242424;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.contacts-phone {
+    font-style: normal;
+    color: #242424;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-inner {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #00000057;
+    text-align: left;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 77px;
+    font-weight: 700;
+}
+
+.breadcrumbs-link {
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 26;
+    font-weight: 700;
+}
+
+.catalog-filter-list {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.button-active {
+    font-size: 16px;
+    line-height: 21px;
+    background-color: #83B3D3;
+}
+
+.button-unactive {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.result {
+    font-size: 30px;    
+    line-height: 39px;
+    font-weight: 700;
+    color:#242424
+}
+.select-control {
+    font-size: 18px;
+    line-height: 23px;
+    color:#242424
+}
+
+.lodge-card-title {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+    color: #242424;
+    text-decoration: none;
+}
+
+.lodge-type {
+    font-size: 18px;
+    line-height: 23px;
+    color: #242424;
+}
+
+.lodge-card-price {
+    font-size: 18px;
+    line-height: 23px;
+    color: #242424;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #756257;
+    
+}
+
+.button-add-favorites {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #83B3D3;
+}
+
+.button-favorites {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #7DB54F;
+}
+
+.rating {
+    font-size: 16px;
+    line-height: 21px;
+    color: #242424;
+    text-transform: uppercase;
+    background-color: #E6E6E6;
+}
+
+.download-more {
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #83B3D3;
+}
+
+.pagination-current {
+    font-size: 20px;
+    line-height: 26px;
+    color: #242424;
+    background-color: #F2F2F2;
+}
+
+.pagination-link {
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #83B3D3;
+}
+
+.inner-newsletter {
+    color: #242424;
+}
+
+/* Это попытки положить текст на картинку */
+
+.filter-container {
+
+    background-image: url("images/catalog/background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
