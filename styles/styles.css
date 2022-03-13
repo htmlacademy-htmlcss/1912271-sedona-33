@@ -4,7 +4,7 @@
     font-weight: 400;
     src: url("fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
-  }
+}
   
   @font-face {
     font-family: "PT Sans";
@@ -12,14 +12,14 @@
     font-weight: 700;
     src: url("fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
-  }
+}
   
   @font-face {
     font-family: "PT Sans";
     font-style: italic;
     font-weight: 400;
     src: url("fonts/ptsans-400.woff2") format("woff2");
-  }
+}
   
   
   @font-face {
@@ -28,7 +28,7 @@
     font-weight: 700;
     src: url("fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
-  }
+}
   
 body {
     font-family: "PT Sans", sans-serif;
@@ -37,6 +37,14 @@ body {
     color: #242424;
     background-color: #FFFFFF;
 }  
+
+li {
+    list-style-type: none; 
+}
+
+.visually-hidden {
+    display: none;
+}
 
 .main-header {
     font-family: "PT Sans", sans-serif;
@@ -74,12 +82,13 @@ body {
     background-image: url("images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
 
+.welcome-container {
 }
 
 .advantages {
     text-align: center;
-
 }
 
 .advantages-title {
@@ -88,7 +97,6 @@ body {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-
 }
 
 .advantages-subtitle {
@@ -151,7 +159,7 @@ body {
 
 .newsletter {
     font-family: "PT Sans", sans-serif;
-    color:#242424;
+    color:#FFFFFF;
     text-align: center;
 }
 
@@ -181,7 +189,14 @@ body {
     font-size: 18px;
     line-height: 26px;
     background-color: #F2F2F2;
+}
 
+.newsletter-container {
+    color: #FFFFFF;
+    background: #242424;
+    background-image: url("../images/newsletter-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .page-footer {
@@ -205,7 +220,6 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     color: #FFFFFF;
-    background-color: #00000057;
     text-align: left;
 }
 
@@ -238,13 +252,26 @@ body {
     font-size: 16px;
     line-height: 21px;
     background-color: #83B3D3;
+    border: none;
 }
 
 .button-unactive {
     font-size: 18px;
     line-height: 23px;
+    border: none;
 }
 
+.filter-container {
+    color: #FFFFFF;
+    background: #242424;
+    background-image: url("../images/catalog/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.select {
+    background-color: #FFFFFF;
+}
 .result {
     font-size: 30px;    
     line-height: 39px;
@@ -281,7 +308,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
-    text-decoration: none;
+    text-decoration:  none;
     background-color: #756257;
     
 }
@@ -318,13 +345,6 @@ body {
     background-color: #83B3D3;
 }
 
-.pagination-current {
-    font-size: 20px;
-    line-height: 26px;
-    color: #242424;
-    background-color: #F2F2F2;
-}
-
 .pagination-link {
     font-size: 20px;
     line-height: 26px;
@@ -333,16 +353,17 @@ body {
     background-color: #83B3D3;
 }
 
-.inner-newsletter {
+.pagination-current {
+    font-size: 20px;
+    line-height: 26px;
+    color: #242424;
+    background-color: #F2F2F2;
+}
+.title-number-card {
     color: #242424;
 }
 
-/* Это попытки положить текст на картинку */
-
-.filter-container {
-
-    background-image: url("images/catalog/background.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+.inner-newsletter {
+    color: #242424;
+    text-align: center;
 }
-
