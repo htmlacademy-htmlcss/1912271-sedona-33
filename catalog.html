@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="page-container">
   <header class="main-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -31,13 +32,13 @@
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Поиск</span>
-            <img class="" alt="Поиск" src="images/navigation-icon-search.svg" width="42" height="66">
+            <img class="" alt="Поиск" src="images/navigation-icon-search.svg" width="18" height="18">
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Избранное</span>
-            <img class="" alt="Избранное" src="images/navigation-icon-favorites.svg" width="42" height="66">
+            <img class="" alt="Избранное" src="images/navigation-icon-favorites.svg" width="40" height="50">
           </a>
         </li>
         <li class="navigation-item">
@@ -48,9 +49,7 @@
   </header>
 
   <main class="main-container main-inner">
-    <div class="page-container">
-    <div  class="filter-container">
-    <section>
+    <section class="filter-container">
       <h1 class="inner-header-title">Гостиницы Седоны
       </h1>
     <ul class="breadcrumbs">
@@ -107,25 +106,25 @@
               </label>
             </li>
           </ul>
-
         </fieldset>
 
         <!--- СТОИМОСТЬ-->
-
+        <div class="filter-price"></div>
+        <div class="fiter-button">
         <button class="button-active" type="submit">Применить</button>
         <button class="button-unactive" type="reset">Сбросить</button>
+        </div>
       </form>
       </section>
-    </div>
-    <div class="select">
-      <section>
+      
+    <section class="select">
       <h2 class="result"> Найдено гостиниц </h2>
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешёвые</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
-
+      <div class="select-button">
       <a href="#" class="button-title">
         <span class="visually-hidden ">Показать карточки</span>
         <img src="images/catalog/catalog-button-title.svg">
@@ -138,8 +137,8 @@
         <span class="visually-hidden">Показать список</span>
         <img src="images/catalog/catalog-button-list.svg">
       </a>
+      </div>
       </section>
-    </div>
 
       <ul class="lodge-list">
         <li class="lodge-card">
@@ -237,7 +236,7 @@
         </li>
       </ul>
 
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <form action="https://echo.htmlacademy.ru/courses" method="post" class="number-cards">
         <p class="title-number-card">Гостиниц на странице</p>
         <select name="number-cards">
           <option value="4">4</option>
@@ -258,7 +257,6 @@
         </button>
       </form>
     </section>
-    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer-container">
@@ -298,6 +296,7 @@
       <img src="images/footer-logo-html.svg" alt="Логотип разработчика">
     </section>
   </div>
+</div>
 
   </footer>
 </body>
