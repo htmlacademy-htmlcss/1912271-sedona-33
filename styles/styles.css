@@ -46,18 +46,21 @@ body {
     background-color: #FFFFFF;
 }  
 .page-container {
-    display: flex;
     width: 1200px;
     margin: 0 auto;
-}
-li {
-    list-style-type: none; 
 }
 
 .visually-hidden {
     display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;  
 }
-
 .main-header {
     font-family: "PT Sans", sans-serif;
     color: #242424;
@@ -67,7 +70,6 @@ li {
 .navigation {
     display: flex;
     margin: 0 auto;
-
 }
 .navigation-logo {
     width: 139px;
@@ -76,18 +78,24 @@ li {
     padding: 0;
 }
 .navigation-list {
-    width: 450px;
-    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin:0;
     padding: 0;
+    list-style-type: none; 
 }
 
 .navigation-user {
     width: 300px;
     margin-left: auto;
-    padding: 0;
+    min-width: 42px;
+    min-height: 66px;
 }
 
 .navigation-link {
+    display: block;
+    padding: 20px; 17px;
     font-family: "PT Sans", sans-serif;
     font-style: bold;
     font-size: 20px;
@@ -105,6 +113,7 @@ li {
     line-height: 20px;
     font-weight: 700;
     text-align: center;
+    margin: 9px 15px 8px 15px;
     color: #FFFFFF;
     background-color: #756257;
     text-decoration: none;
@@ -114,10 +123,6 @@ li {
 .main-index {
     color: #242424;
     background-color: #FFFFFF;
-    background-image: url("images/index-background.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    min-height: 485px;
 }
 
 .main-container {
@@ -127,17 +132,60 @@ li {
 .welcome-container {
     display:block;
     margin: 0 auto;
+    color: #FFFFFF;
+    background: #242424;
+    background-image: url("../images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    min-height: 485px;
+    padding-top: 51px; 
+    padding-bottom: 0;
+
+}
+.welcome {
+    margin-bottom: 25px;
+}
+.welcome-divider {
+    margin: 0;
+    margin-top: 25px;
+
+}
+.welcome-plus {
+    display: block;
+    background-color: #FFFFFF;
+    padding: 63px 240px 80px;
+
+}
+
+.welcome-plus-title {
+    font-family: "PT Sans", sans-serif;;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-top: 63px;
+    margin-bottom: 31px;
+    text-transform: uppercase;
+}
+
+.welcom-plus-subtitle {
+    font-family: "PT Sans", sans-serif;;
+    font-size: 22px;
+    line-height: 36px;
+    margin: 0;
 }
 .advantages {
     margin: 0;
     padding: 0;
     text-align: center;
+
 }
 .advantages-list {
     display: flex;
     margin: 0;
     padding-left: 0;
     height: 384px;
+    list-style-type: none;
+
 }
 .padding {
     display: flex;
@@ -157,7 +205,7 @@ li {
     background-color: #83B3D3;
 }
 .light-blue {
-    background-color: rgba(131, 179, 211, 0.12);
+    background-color: rgba(131, 179, 211, 0.20);
 }
 .light-light-blue {
     background-color: rgba(131, 179, 211, 0.12);
@@ -165,38 +213,32 @@ li {
 .white {
     background-color: #FFFFFF;
 }
-.advantages-title {
-    font-family: "PT Sans", sans-serif;;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-
-.advantages-subtitle {
-    font-family: "PT Sans", sans-serif;;
-    font-size: 22px;
-    line-height: 36px;
-}
 .advantages-item {
     padding: 20;
     box-sizing: border-box;
 }
 .advantages-item-image {
+    color:#FFFFFF;
 
 }
-.advantages-description-title {
+.advantages-title {
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-
+    margin-top: 97px;
+    margin-bottom: 0;
 }
-
-.advantages-description-number {
+.advantages-title icon {
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+.advantages-number {
     font-family: "PT Sans", sans-serif;;
     font-size: 18px;
     line-height: 21px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -204,12 +246,13 @@ li {
     font-family: "PT Sans", sans-serif;;
     font-size: 18px;
     line-height: 21px;
+    margin: 0;
 
 }
 
 .search {
     display: block;
-    height: 417;
+    min-width: 417px;
     background-color: #FFFFFF;
     font-family: "PT Sans", sans-serif;
     text-align: center;
@@ -220,6 +263,8 @@ li {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
+    margin-top: 91px;
+    margin-bottom: 29px;
     text-transform: uppercase;
 
 }
@@ -227,12 +272,16 @@ li {
 .search-subtitle {
     font-size:22px;
     line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 56px;
 }
 
 .search-button {
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 108px;
     color: #FFFFFF;
     background-color: #756257;
     text-decoration: none;
@@ -253,17 +302,23 @@ li {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+    margin-top: 94px;
+    margin-bottom: 29px;
 }
 
 .newsletter-subtitle {
     font-size:22px;
     line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 46px;
+
 }
 
 .newsletter-button {
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
+    margin-bottom: 110px;
     color: #FFFFFF;
     background-color: #83B3D3; 
     text-decoration: none;
@@ -288,19 +343,39 @@ li {
     color: #242424;
     background-color: #FFFFFF;
     text-align: center;
+    list-style-type: none; 
+
 }
 .page-footer-container {
     display: flex;
     margin: 0 auto;
+
 }
 .footer-social {
-    width: 107px;
-    margin-right: 61px;
+
 }
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 107px;
+    list-style-type: none; 
+    
+}
+.footer-social-item {
+    margin-right: 28px;
+    margin-top: 49px;
+
+}
+.footer-social-item:nth-child(3n) {
+    margin-right: 0;
+}
+  
 .footer-tel {    
     width: 720px;
     margin-right: 53px;
+    margin-top: 42px;
     font-style: normal;
+
 }
 .contacts-phone {
     color: #242424;
@@ -309,16 +384,20 @@ li {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+
 }
 .footer-copyright-logo {
     width: 115px;
+    margin-top: 40px;
     margin-left: auto;
+
 }
 .main-inner {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     color: #FFFFFF;
     text-align: left;
+
 }
 .filter-container {
     color: #FFFFFF;
@@ -326,6 +405,7 @@ li {
     background-image: url("../images/catalog/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 .form {
     display: flex;
@@ -333,11 +413,13 @@ li {
     width: 1200px;
     margin: 0 auto;
     flex-direction: row;
+
 }
 .inner-header-title {
     font-size: 60px;
     line-height: 77px;
     font-weight: 700;
+
 }
 
 .breadcrumbs-link {
@@ -346,25 +428,31 @@ li {
     font-size: 16px;
     line-height: 21px;
     text-decoration: none;
+
 }
 .catalog-filter-group {
     width: 150px;
+
 }
 .filter-price {
     width: 290px;
+
 }
 .fiter-button {
     width: 160px;
+
 }
 .catalog-filter-title {
     font-size: 20px;
     line-height: 26;
     font-weight: 700;
+
 }
 
 .catalog-filter-list {
     font-size: 18px;
     line-height: 24px;
+
 }
 
 .button-active {
@@ -372,18 +460,23 @@ li {
     line-height: 21px;
     background-color: #83B3D3;
     border: none;
+
 }
 
 .button-unactive {
     font-size: 18px;
     line-height: 23px;
     border: none;
+
 }
 
 .select {
     display: flex;
     width: 1057px;
     background-color: #FFFFFF;
+    margin-top: 44px;
+    margin-bottom: 53px;
+
 }
 .result {
     min-width: 338px;
@@ -391,6 +484,7 @@ li {
     line-height: 39px;
     font-weight: 700;
     color:#242424
+
 }
 .select-control {
     width: 287px;
@@ -403,6 +497,7 @@ li {
 }
 .lodge-list {
     display: flex;
+    flex-wrap: wrap;
     width: 1057px;
 }
 .lodge-card-title {
@@ -411,20 +506,20 @@ li {
     font-weight: 700;
     color: #242424;
     text-decoration: none;
-}
 
+}
 .lodge-type {
     font-size: 18px;
     line-height: 23px;
     color: #242424;
-}
 
+}
 .lodge-card-price {
     font-size: 18px;
     line-height: 23px;
     color: #242424;
-}
 
+}
 .button {
     font-size: 16px;
     line-height: 21px;
@@ -433,29 +528,29 @@ li {
     background-color: #756257;
     
 }
-
 .button-add-favorites {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
     background-color: #83B3D3;
-}
 
+}
 .button-favorites {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
     background-color: #7DB54F;
-}
 
+}
 .rating {
     font-size: 16px;
     line-height: 21px;
     color: #242424;
     text-transform: uppercase;
     background-color: #E6E6E6;
+
 }
 .download-more {
     font-size: 20px;
@@ -464,10 +559,12 @@ li {
     text-decoration: none;
     background-color: #83B3D3;
     width: 620px;
+
 }
 .pagination {
     display: flex;
     width: 1057px;
+
 }
 .pagination-link {
     font-size: 20px;
@@ -475,13 +572,14 @@ li {
     color: #FFFFFF;
     text-decoration: none;
     background-color: #83B3D3;
-}
 
+}
 .pagination-current {
     font-size: 20px;
     line-height: 26px;
     color: #242424;
     background-color: #F2F2F2;
+
 }
 .number-cards {
 
@@ -489,7 +587,6 @@ li {
 .title-number-card {
     color: #242424;
 }
-
 .inner-newsletter {
     display: flex;
     width: 800px;
