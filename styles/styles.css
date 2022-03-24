@@ -61,6 +61,7 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;  
 }
+
 .main-header {
     font-family: "PT Sans", sans-serif;
     color: #242424;
@@ -69,14 +70,15 @@ body {
 
 .navigation {
     display: flex;
-    margin: 0 auto;
 }
+
 .navigation-logo {
     width: 139px;
     margin-right: 30;
     margin-left: 70;
     padding: 0;
 }
+
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
@@ -97,7 +99,6 @@ body {
     display: block;
     padding: 20px 17px;
     font-family: "PT Sans", sans-serif;
-    font-style: bold;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -108,7 +109,6 @@ body {
 
 .navigation-link-button {
     font-family: "PT Sans", sans-serif;
-    font-style: bold;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -137,11 +137,11 @@ body {
     background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     padding-bottom: 0;
+    text-align: center;
 }
 
 .welcome {
     padding-top: 51px;
-    padding-left: 371px;
 }
 
 .welcome-divider {
@@ -152,7 +152,7 @@ body {
     display: block;
     margin: 0;
     background-color: #FFFFFF;
-    padding: 63px 240px 80px;
+    padding: 63px 220px 80px;
 
 }
 
@@ -161,16 +161,17 @@ body {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    margin-top: 63px;
     margin-bottom: 31px;
     text-transform: uppercase;
+    text-align: center;
+    margin: 0;
 }
 
-.welcom-plus-subtitle {
+.welcome-plus-subtitle {
     font-family: "PT Sans", sans-serif;;
     font-size: 22px;
     line-height: 36px;
-    margin: 0;
+    text-align: center;
 }
 .advantages {
     margin: 0;
@@ -317,7 +318,6 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
-    margin-bottom: 110px;
     color: #FFFFFF;
     background-color: #83B3D3; 
     text-decoration: none;
@@ -337,20 +337,28 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.newsletter-form {
+display: flex;
+justify-content: center;
+}
+
 .page-footer {
     font-family: "PT Sans", sans-serif;
     color: #242424;
     background-color: #FFFFFF;
     text-align: center;
     list-style-type: none; 
-
 }
+
 .page-footer-container {
     display: flex;
     margin: 0 auto;
+    padding-top: 44px;
     padding-left: 72px;
     padding-right: 72px;
-
+    align-items: center;
+    
 }
 .footer-social {
 }
@@ -358,14 +366,17 @@ body {
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
-    width: 107px;
+    width: 140px;
     padding: 0;
-    list-style-type: none;     
+    margin: 0;
 }
 
 .footer-social-item {
-    margin-right: 28px;
-    margin-top: 49px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-items: center;
+    margin-right: 8px;
 }
 
 .footer-social-item:nth-child(3n) {
@@ -375,25 +386,22 @@ body {
 .footer-tel {    
     width: 720px;
     margin-right: 53px;
-    margin-top: 42px;
     font-style: normal;
-
 }
+
 .contacts-phone {
     color: #242424;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
-
 }
+
 .footer-copyright-logo {
     width: 115px;
-    margin-top: 40px;
     margin-left: auto;
-
 }
+
 .main-inner {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
@@ -418,12 +426,12 @@ body {
     font-weight: 700px;
     margin-top: 0;
     margin-bottom: 5px; 
-    border: 0;
 }
 
 .breadcrumbs {
     display: flex;
     margin: 0;
+    padding: 0;
     list-style-type: none; 
 }
 
@@ -504,12 +512,14 @@ body {
     margin-bottom: 53px;
     margin-left: 63px;
     padding: 0;
+    align-items: center;
 }
 
 .result {
-    min-width: 340px;
+    min-width: 380px;
     height: 39px;
-    margin-right: 191px;
+    margin: 0;
+    margin-right: 190px;
     font-size: 30px;    
     line-height: 39px;
     font-weight: 700;
@@ -530,22 +540,31 @@ body {
     display: flex;
     align-items: center;
     width: 160px;
-    height: 48px;
 }
 
 .select-button .button-icon {
+    display: flex;
     width: 48px;
     height: 48px;
-    padding: 17px 16px;
-    margin-left: auto;
     margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #E6E6E6;
 }
+
+.button-icon .active {
+    border: 2px solid #000000;
+}
+
 
 .lodge-list {
     display: flex;
     flex-wrap: wrap;
     width: 1057px;
+    padding: 20px;
+    margin-left: 64px;
 }
+
 .lodge-card-title {
     font-size: 24px;
     line-height: 31px;
@@ -553,14 +572,14 @@ body {
     color: #242424;
     text-decoration: none;
 }
+
 .lodge-card-link {
     text-decoration: none;
 }
 
 .lodge-card {
     display: inline-block;
-    padding: 20px;
-    margin-right: 18px;
+    margin-right: 58px;
     margin-bottom: 10px;
     text-decoration: none;
 }
@@ -615,8 +634,10 @@ body {
 
 .download-conteiner {
     display: flex;
+    margin: 0 auto;
     width: 1056px;
-    margin: 34px 80px 30px 64px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -627,13 +648,13 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     background-color: #83B3D3;
-    padding: ;
+    text-align: center;
 }
 
 .pagination-container {
     display: flex;
     width: 1057px;
-    margin: 30px 80px 73px 64px;
+    margin: 30px 80px 0px 64px;
     padding: 0;
 }
 
@@ -679,7 +700,6 @@ body {
 }
 .inner-newsletter {
     width: 800px;
-    height: 240px;
     padding: 0;
     margin: 74px 208px 140px 192px;
     color: #242424;
